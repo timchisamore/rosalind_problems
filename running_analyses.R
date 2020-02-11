@@ -76,4 +76,25 @@ proteins_orf(here::here("data",
 												"raw",
 												"rosalind_orf.txt"))
 
+# RNA Splicing
+rna_splicing(here::here("data",
+												"raw",
+												"rosalind_splc.txt"))
+
+# Locating Restriction Sites
+restriction_sites(here::here("data",
+														 "raw",
+														 "rosalind_revp.txt"))
+
+# Enumerating Gene Orders
+rosalind_perm <- as.integer(readr::read_lines(here::here("data",
+																							"raw",
+																							"rosalind_perm.txt")))
+permute(rosalind_perm)
+
+# Enumerating k-mers Lexicographically
+
+
+
+
 
