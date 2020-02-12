@@ -1,3 +1,15 @@
+#' Finding a Shared Motif
+#' 
+#' Given a file of DNA sequences with FASTA formatting, this function
+#' returns the longest motif
+#'
+#' @param fasta A FASTA file of DNA sequences
+#'
+#' @return A character
+#' @export
+#'
+#' @examples
+#' shared_motif(fasta_data)
 shared_motif <- function(fasta) {
 	source(here::here("src",
 										"functions",

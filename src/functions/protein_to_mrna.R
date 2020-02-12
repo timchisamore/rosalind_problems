@@ -1,3 +1,16 @@
+#' Determining the Number of Possible RNA Combinations for a Given Protein
+#' 
+#' Given a string of amino acids, this function determines the number
+#' of possible mRNA combinations that could lead to this protein
+#'
+#' @param p A character of amino acids
+#'
+#' @return An integer
+#' @export
+#'
+#' @examples
+#' protein_to_mrna("MGFPHCLIPPIILKSMNDRCECT")
+#' protein_to_mrna("MQYKKNPQRSYMAANFMPDI")
 protein_to_mrna <- function(p) {
 	codons_to_amino_acids <- readr::read_csv(here::here("data",
 																											"amino_acids.csv"),

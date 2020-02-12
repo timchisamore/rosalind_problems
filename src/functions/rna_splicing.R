@@ -1,3 +1,16 @@
+#' RNA Splicing
+#' 
+#' This function reads a FASTA file of DNA sequences in and returns
+#' the protein constructed upon removing the introns and keeping only
+#' the exons
+#'
+#' @param fasta A file of DNA in FASTA formatting
+#'
+#' @return A character
+#' @export
+#'
+#' @examples
+#' rna_splicing(fasta_data)
 rna_splicing <- function(fasta) {
 	source(here::here("src",
 				 "functions",

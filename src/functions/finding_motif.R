@@ -1,3 +1,17 @@
+#' Finding a Motif
+#'
+#' Given a character vector of two DNA sequences, this function finds
+#' the positions where the smaller of the two strings appears in the
+#' larger string
+#'
+#' @param seqs A character vector of two DNA sequences
+#'
+#' @return A numeric vector indicating the positions the motif appears
+#' @export
+#'
+#' @examples
+#' finding_motif(c("ATGCCATGCCC", "ATG"))
+#' finding_motif(c("ACGTAT", "AGGCTAAGCTAGACGTAT"))
 finding_motif <- function(seqs) {
 	s <- seqs[which.max(nchar(seqs))]
 	t <- setdiff(seqs, s)

@@ -1,3 +1,15 @@
+#' Finding Restriction Sites
+#' 
+#' Given a file of DNA sequences with FASTA formatting, this function
+#' will return a data.frame with the positions and lengths of all
+#' restriction sites
+#'
+#' @param fasta A fiile of DNA sequences in FASTA format
+#'
+#' @return A data.frame
+#' @export
+#'
+#' @examples
 restriction_sites <- function(fasta) {
 	source(here::here("src",
 										"functions",

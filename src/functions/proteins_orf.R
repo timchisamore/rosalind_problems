@@ -1,3 +1,16 @@
+#' Finding Proteins from an Open Reading Frame
+#' 
+#' Given a sequence of DNA in FASTA formatting, this function
+#' determines the possible proteins that can be constructed
+#' from the open reading frame
+#'
+#' @param fasta A file of DNA sequences in FASTA formatting
+#'
+#' @return A character vector
+#' @export
+#'
+#' @examples
+#' proteins_orf(fasta_data)
 proteins_orf <- function(fasta) {
 	source(here::here("src",
 										"functions",

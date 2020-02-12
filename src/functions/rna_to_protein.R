@@ -1,3 +1,16 @@
+#' Converting RNA to Protein
+#' 
+#' This function takes an RNA sequence and returns the protein
+#' corresponding to it
+#'
+#' @param s A character representing a sequence of RNA
+#'
+#' @return A character
+#' @export
+#'
+#' @examples
+#' rna_to_protein("AUGCUUCAUCAUGUCAAUAAA")
+#' rna_to_protein("AUG")
 rna_to_protein <- function(s) {
 	s_length <- nchar(s)
 	codons_to_amino_acids <- readr::read_csv(here::here("data",

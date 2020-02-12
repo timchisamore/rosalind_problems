@@ -1,3 +1,16 @@
+#' Tha Hamming Distance
+#' 
+#' Given DNA sequences of equal length, this function will return how
+#' many base pairs differ
+#'
+#' @param seqs A character vector of DNA sequences of equal length
+#'
+#' @return An integer
+#' @export
+#'
+#' @examples
+#' hamming_distance(c("ACTG", "ACCC"))
+#' hamming_distance(c("ATCGGGTTA", "AAGGGGTTT"))
 hamming_distance <- function(seqs) {
 	n <- length(seqs)
 	combinations <- combn(n, 2)

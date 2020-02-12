@@ -1,3 +1,17 @@
+#' Reading FASTA Data
+#' 
+#' Given a file of DNA sequences in FASTA format, this function
+#' returns a data.frame with two columns, the first being IDs
+#' and the second being sequences. The data.frame will have
+#' as many rows as there are sequences in the fasta file
+#'
+#' @param file A file of DNA sequences in FASTA format
+#'
+#' @return A data.frame
+#' @export
+#'
+#' @examples
+#' read_fasta(fasta_file)
 read_fasta <- function(file) {
 	lines <- readr::read_lines(file) # reading FASTA file in by line
 	id_labels <- sub(">",
